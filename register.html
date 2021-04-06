@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css"> 
+    <title>Register</title>
+</head>
+<body>
+    <div class="container">
+        <form class="form">
+            <h1 class="form-title">Register</h1>
+            <div class="input-content">
+                <label for="fullName">Full Name</label>
+                <input type="text" id="fullName" class="input-form" placeholder="Enter your name" required>
+            </div>
+            <div class="input-content">
+                <label for="email">Email</label>
+                <input type="email" id="email" class="input-form" placeholder="example@mail.com" required>
+            </div>
+            <div class="input-content">
+                <label for="password">Password</label>
+                <input type="password" id="password" class="input-form" 
+                placeholder="Password must have 6 characters, one number, one uppercase" required>
+            </div>
+            <div class="input-content">
+                <label for="confirmPassword"> Confirm Password</label>
+                <input type="password" id="confirmPassword" class="input-form" placeholder="Repeat password" required>
+            </div>
+            <div class="btn-content">
+                <button id="register-btn" type="submit">Register</button>
+                <button id="reset-btn" type="reset">Reset</button>
+            </div>
+            <div id="validation-container"></div>
+            <div class="a-container">
+                <a class="anchorR" id="anchor" href="./login.html">Already have an account? Sign in</a>
+            </div>
+        </form>
+    </div>
+    <script src="./js/register.js"></script>
+</body>
+</html>
