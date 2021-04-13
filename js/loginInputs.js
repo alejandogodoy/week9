@@ -82,6 +82,5 @@ function apiRequest()
 {
     let url = "https://jsonplaceholder.typicode.com/users?email=" + email.value;
     fetch(url)
-    .then(response => response.json())
-    .then(json => console.log(json));
+    .then(response => console.log(response));
 }
