@@ -13,19 +13,23 @@
             <div class="input-content">
                 <label for="fullName">Full Name</label>
                 <input type="text" id="fullName" class="input-form" placeholder="Enter your name" required>
+                <div id="errormsg-name"></div>
             </div>
             <div class="input-content">
                 <label for="email">Email</label>
                 <input type="email" id="email" class="input-form" placeholder="example@mail.com" required>
+                <div id="errormsg-email"></div>
             </div>
             <div class="input-content">
                 <label for="password">Password</label>
                 <input type="password" id="password" class="input-form" 
                 placeholder="Password must have 6 characters, one number, one uppercase" required>
+                <div id="errormsg-psw"></div>
             </div>
             <div class="input-content">
                 <label for="confirmPassword"> Confirm Password</label>
                 <input type="password" id="confirmPassword" class="input-form" placeholder="Repeat password" required>
+                <div id="errormsg-repsw"></div>
             </div>
             <div class="btn-content">
                 <button id="register-btn" type="submit">Register</button>
@@ -38,5 +42,6 @@
         </form>
     </div>
     <script src="./js/register.js"></script>
+    <script src="./js/registerInputs.js"></script>
 </body>
 </html>
