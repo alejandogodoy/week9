@@ -2,7 +2,7 @@ var nameMessage = document.getElementById('errormsg-name');
 var emailMessage = document.getElementById('errormsg-email');
 var pswMessage = document.getElementById('errormsg-psw');
 var rePwsMessage = document.getElementById('errormsg-repsw');
-var inputsValidate;
+var inputWritten;
 
 // NAME VALIDATION
 
@@ -128,18 +128,18 @@ confirmPassword.onfocus = function () {
 // SHOW INPUTS
 
 function showInputs() {
-    inputsValidate = ' ';
+    inputWritten = ' ';
     if(validateName()){
-        inputsValidate += `<li>Full Name: ${fullName.value}</li>`
+        inputWritten += `<li>Full Name: ${fullName.value}</li>`
     }
     if(validateEmail()){
-        inputsValidate += `<li>Email: ${email.value}</li>`
+        inputWritten += `<li>Email: ${email.value}</li>`
     }
     if(validatePassword()){
-        inputsValidate += `<li>Password: ${password.value}</li>`
+        inputWritten += `<li>Password: ${password.value}</li>`
     }
     if(validateConfirmPassword()){
-        inputsValidate += `<li>Confirm Password: ${confirmPassword.value}</li>`
+        inputWritten += `<li>Confirm Password: ${confirmPassword.value}</li>`
     }
 }
 
