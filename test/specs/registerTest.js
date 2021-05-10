@@ -8,28 +8,28 @@ describe("Register page Tests", () => {
     it("leaving empty email input display error message", () => {
       RegisterPage.setFullName();
       expect(RegisterPage.nameValidation).toHaveText(
-        "Must have 8 characters and a space between"
+        "Must have 8 characters and a space in between"
       );
       browser.pause(2000);
     });
     it("using an undefined name display error message", () => {
       RegisterPage.setFullName(undefined);
       expect(RegisterPage.nameValidation).toHaveText(
-        "Must have 8 characters and a space between"
+        "Must have 8 characters and a space in between"
       );
       browser.pause(2000);
     });
     it("using a name without space between display error message", () => {
       RegisterPage.setFullName("testname");
       expect(RegisterPage.nameValidation).toHaveText(
-        "Must have 8 characters and a space between"
+        "Must have 8 characters and a space in between"
       );
       browser.pause(2000);
     });
     it("using a name with numbers display error message", () => {
       RegisterPage.setFullName("test1 name2");
       expect(RegisterPage.nameValidation).toHaveText(
-        "Must have 8 characters and a space between"
+        "Must have 8 characters and a space in between"
       );
       browser.pause(2000);
     });
