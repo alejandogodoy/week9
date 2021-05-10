@@ -22,7 +22,7 @@ fullName.onblur = function () {
     fullName.style.backgroundColor = "#d1d1d1";
   } else {
     nameMessage.style.display = "flex";
-    nameMessage.innerHTML = "Must have 6 characters and a space in between";
+    nameMessage.innerHTML = "Must have 8 characters and a space in between";
     nameMessage.style.color = "#ff0000";
     fullName.style.backgroundColor = "#d1d1d1";
   }
@@ -79,7 +79,7 @@ password.onblur = function () {
   } else {
     pswMessage.style.display = "flex";
     pswMessage.innerHTML =
-      '"Password must have 8 characters, one number, one uppercase"';
+      "Password must have 8 characters, one number, one uppercase";
     pswMessage.style.color = "#ff0000";
     password.style.backgroundColor = "#d1d1d1";
   }
