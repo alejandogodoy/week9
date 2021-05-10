@@ -76,10 +76,8 @@ function showInputs() {
 function apiRequest() {
   fetch("http://localhost:4000/login", {
     method: "PUT",
-    body: JSON.stringify({
-      email: `${email.value}`,
-      password: `${password.value}`,
-    }),
+    body: JSON.stringify({email: `${email.value}`, password: `${password.value}`,}),
     headers: { "Content-Type": "application/json" },
-  }).then((response) => console.log(response));
+  })
+  .then((response) => console.log(response));
 }
