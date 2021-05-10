@@ -31,7 +31,7 @@ npm run test
 ---
 ## Github Pages
 
-https://alejandogodoy.github.io/week9/login.html
-https://alejandogodoy.github.io/week9/register.html
+- https://alejandogodoy.github.io/week9/login.html
+- https://alejandogodoy.github.io/week9/register.html
 
 **Alejandro Godoy - alejandogodoy22@gmail.com**
