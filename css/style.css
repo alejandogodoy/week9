@@ -14,6 +14,8 @@ body {
   margin: 1rem;
   padding: 2rem;
   border-radius:12px;
+  border:2px solid rgb(7, 104, 88);
+  background-color: #F0EDEC;
 }
 .form-title {
   text-align: center;
@@ -53,6 +55,7 @@ body {
   justify-content: space-around;
 }
 .btn-content button {
+  background-color: whitesmoke;
   width: 40%;
   padding: 1rem 2rem;
   font-size: 1rem;
