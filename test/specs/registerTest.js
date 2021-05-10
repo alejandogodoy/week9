@@ -70,35 +70,35 @@ describe("Register page Tests", () => {
     it("leaving empty password input should display error message", () => {
       RegisterPage.setPassword();
       expect(RegisterPage.passwordValidation).toHaveText(
-        '"Password must have 8 characters, one number, one uppercase"'
+        "Password must have 8 characters, one number, one uppercase"
       );
       browser.pause(2000);
     });
     it("using lowercase letters only display error message", () => {
       RegisterPage.setPassword("password");
       expect(RegisterPage.passwordValidation).toHaveText(
-        '"Password must have 8 characters, one number, one uppercase"'
+        "Password must have 8 characters, one number, one uppercase"
       );
       browser.pause(2000);
     });
     it("using numbers only display error message", () => {
       RegisterPage.setPassword(1234567);
       expect(RegisterPage.passwordValidation).toHaveText(
-        '"Password must have 8 characters, one number, one uppercase"'
+        "Password must have 8 characters, one number, one uppercase"
       );
       browser.pause(2000);
     });
     it("using capital letters only display error message", () => {
       RegisterPage.setPassword("PASSWORD");
       expect(RegisterPage.passwordValidation).toHaveText(
-        '"Password must have 8 characters, one number, one uppercase"'
+        "Password must have 8 characters, one number, one uppercase"
       );
       browser.pause(2000);
     });
     it("using a password with less than 8 characters", () => {
       RegisterPage.setPassword("Pass123");
       expect(RegisterPage.passwordValidation).toHaveText(
-        '"Password must have 8 characters, one number, one uppercase"'
+        "Password must have 8 characters, one number, one uppercase"
       );
       browser.pause(2000);
     });
