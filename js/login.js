@@ -79,10 +79,10 @@ function validateAll() {
 // LOGIN BUTTON
 
 document.getElementById("login-btn").onclick = function (e) {
+  e.preventDefault();
   showInputs();
   validateAll();
   apiRequest();
-  e.preventDefault();
 };
 
 // RESET BUTTON
